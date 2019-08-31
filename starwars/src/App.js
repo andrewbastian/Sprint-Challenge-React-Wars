@@ -22,12 +22,12 @@ import CharicterCards from "./components/CharicterCards.js"
 //     )
 // }
 
-useEffect(grab, [])
-console.log(data)
+// useEffect(grab, [])
+// console.log(data)
 function App() {
   const[data, setData] = useState({});
   useEffect(()=>{
-  axios.get('https://swapi.co/api/people/?format=json')
+  axios.get('https://swapi.co/api/people')
 
   .then(res => {
      console.log(res.data.results);
