@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import axios from "axios"
 import styled from 'styled-components';
 
@@ -6,7 +5,7 @@ import React, {useState, useEffect} from 'react';
 // import Films from "./Films.js"
 const Cards = styled.div`
     display: flex;
-    justify-content: center;
+    align-items: center;
     align-items: space-evenly;
     font-family: nasalization, sans-serif;
     flex-flow: column;
@@ -73,29 +72,4 @@ return (
         })}
     </Cards>
 )
-=======
-import React from "react";
-
-export default function CharicterCards(props) {
-
-return (
-
-    <div className= "Card">
-
-    <CharicterCards>
-
-        <p>Name:{props.name}</p>
-        <p>{props.birth_year}</p>
-        <p>{props.hair_color}</p>
-        <p>{props.height}</p>
-        <p>{props.eye_color}</p>
-        <p>{props.gender}</p>
-
-
-    </CharicterCards>
-
-    </div>
-
-    )
->>>>>>> 513c4bc5389ef73a85d2a154887ec1ed581f4e28
 }
