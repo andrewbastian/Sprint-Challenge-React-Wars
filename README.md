@@ -26,28 +26,41 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React JS is a JavaScript library created by Facebook(and individual developers) to solve Facebook sized problems. It is good for the development of single-page or mobile apps. It allows developers to write html in to the JavaScript in a very DRY syntax. With an added dependency like ‘styled-components’ we can also add CSS to our JS. The library is optimized for fetching rapidly changing data from an API request. Using a virtual DOM react lightens the load on the real dom and the problem of “how do we feed a constant stream of memes and political ranting to someones phone?” ;)
+
+
 - [ ] What does it mean to _think_ in react?
+
+  Dividing the larger user-interface into smaller parts or components.
 
 - [ ] Describe state.
 
+State is data being passed down from a server
+
+setState is a core function in react. When this function is required to set a new state for the component.
+
 - [ ] Describe props.
 
+Props are how we pass state from one component to another. Props data can not be changed and is read only. This helps work flow stay organized.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are any action that affects something outside the scope of the function being executed. Effects are synced using the effect hook ‘useEffect()’
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
-- [ ] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
-- [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
+- [√] Create a forked copy of this project.
+- [√] Add TL as collaborator on Github.
+- [√] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [√] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [√] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
+- [√] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
+- [√] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
 Follow these steps for completing your project.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [√] Implement the project on this Branch, **committing progress & changes often.**
+- [√] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
@@ -60,7 +73,7 @@ Follow these steps for completing your project:
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
