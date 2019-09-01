@@ -1,19 +1,40 @@
-import React from 'react';
+import axios from "axios"
+
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components';
+
 import './App.css';
+import CharicterCards from "./components/CharicterCards.js"
+const Header = styled.h1`
 
-const App = () => {
-  // Try to think through what state you'll need for this app before starting. Then build out
-  // the state properties here.
+}`
+    const CardConts = styled.div`
+text-align:center;
+        }`
+        const AppStyle = styled.h1`
+            display: flex;
+            justify-content: center;
+            align-items: space-evenly;
+            font-family: nasalization, sans-serif;
+            flex-flow: column;
+text-align: center;
 
-  // Fetch characters from the star wars api in an effect hook. Remember, anytime you have a 
-  // side effect in a component, you want to think about which state and/or props it should
-  // sync up with, if any.
+            }`
 
-  return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
-  );
+function App() {
+
+return (
+    <AppStyle>
+    <Header>React Wars</Header>
+      <CardConts>
+      <CharicterCards />
+
+      })
+      }
+
+      </CardConts>
+    </AppStyle>
+  )
 }
 
 export default App;
